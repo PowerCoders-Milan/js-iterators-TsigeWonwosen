@@ -10,12 +10,14 @@ console.log( "\n Random Numbers : \n " + randomNumbers)
 // create a function isPrime(number)
 
 const isPrime = (number) =>{
-    for(let i = 2; i< number; i++ ){
+    for(let i = 2; i < number; i++ ){
         if(number % i === 0) return false;
-    return number > 1
     }
+    return number > 1
 }
 
+
+
 // create a primeNumbers array
-const primeNumbers = randomNumbers.filter(number => isPrime(number) ) // filter randomNumbers with isPrime(number)
+const primeNumbers = randomNumbers.filter(num => isPrime(num) && num ) // filter randomNumbers with isPrime(number)
 console.log("\n Prime Filtered Random Numbers : \n " + primeNumbers)
